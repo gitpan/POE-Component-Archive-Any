@@ -1,28 +1,30 @@
 ---
-name: POE-Component-Archive-Any
-version: 0.001
+abstract: 'a non-blocking wrapper around'
 author:
   - 'Zoffix Znet <zoffix@cpan.org>'
-abstract: |-
-  a non-blocking wrapper around
-  L<Archive::Any>
-license: perl
-resources:
-  license: http://dev.perl.org/licenses/
-requires:
-  Archive::Any: 0.093
-  Carp: 1.04
-  POE: 0.9999
-  POE::Filter::Line: 1.192
-  POE::Filter::Reference: 1.2187
-  POE::Wheel::Run: 1.2179
 build_requires:
   Test::More: 0
+configure_requires:
+  Module::Build: 0
+dynamic_config: 1
+generated_by: 'Module::Build version 0.4007, CPAN::Meta::Converter version 2.132830'
+license: perl
+meta-spec:
+  url: http://module-build.sourceforge.net/META-spec-v1.4.html
+  version: 1.4
+name: POE-Component-Archive-Any
 provides:
   POE::Component::Archive::Any:
     file: lib/POE/Component/Archive/Any.pm
-    version: 0.001
-generated_by: Module::Build version 0.2808
-meta-spec:
-  url: http://module-build.sourceforge.net/META-spec-v1.2.html
-  version: 1.2
+    version: 0.002
+requires:
+  Archive::Any: 0
+  Carp: 0
+  POE: 0
+  POE::Filter::Line: 0
+  POE::Filter::Reference: 0
+  POE::Wheel::Run: 0
+  perl: 5.006
+resources:
+  license: http://dev.perl.org/licenses/
+version: 0.002

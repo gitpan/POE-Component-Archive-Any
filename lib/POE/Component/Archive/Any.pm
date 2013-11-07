@@ -3,10 +3,10 @@ package POE::Component::Archive::Any;
 use warnings;
 use strict;
 
-our $VERSION = '0.001';
+our $VERSION = '0.002';
 
 use Carp;
-use POE qw( Filter::Reference  Filter::Line  Wheel::Run );
+use POE (qw( Filter::Reference  Filter::Line  Wheel::Run ));
 
 sub spawn {
     my $package = shift;
@@ -268,6 +268,8 @@ sub _process_request {
 
 1;
 __END__
+
+=encoding utf8
 
 =head1 NAME
 
